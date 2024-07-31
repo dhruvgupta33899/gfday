@@ -204,21 +204,23 @@ button:active {
 /* Carousel container */
 .carousel-container {
     position: relative;
-    max-width: 800px;
-    margin: auto;
-    overflow: hidden;
+    width: 100%;
+    max-width: 600px; /* Adjust this to your preference */
+    margin: 0 auto; /* Center align carousel */
+    overflow: hidden; /* Hide overflow content */
 }
 
-/* Carousel slides */
 .carousel {
     display: flex;
-    transition: transform 0.5s ease-in-out;
-    width: 100%;
+    transition: transform 0.5s ease;
 }
 
 .carousel-slide {
     min-width: 100%;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Ensure padding/margins are included in width */
+    display: flex; /* Center content within the slide */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
 }
 
 .carousel-slide img {
@@ -227,16 +229,15 @@ button:active {
     display: block;
 }
 
-/* Carousel buttons */
 .carousel-btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
+    background-color: rgba(255, 255, 255, 0.8);
     border: none;
-    cursor: pointer;
     padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
     z-index: 10;
 }
 
@@ -247,6 +248,7 @@ button:active {
 .next-btn {
     right: 10px;
 }
+
 
 /* Music Control Button */
 #music-control {
